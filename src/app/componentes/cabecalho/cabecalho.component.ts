@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-cabecalho',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './cabecalho.component.html',
-  styleUrl: './cabecalho.component.css'
+  styleUrl: './cabecalho.component.css',
 })
-export class CabecalhoComponent {
-
-}
+export class CabecalhoComponent {}

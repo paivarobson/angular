@@ -51,11 +51,13 @@ export class AppComponent {
 
   filtrarContatosPorLetraInicial(letra: string): Contato[] {
     return this.filtrarContatosPorTexto().filter((contato) => {
-      return contato.nome.toLowerCase().startsWith(letra);
+      return this.removerAcentos(contato.nome)
+        .toLowerCase()
+        .startsWith(this.removerAcentos(letra).toLowerCase());
     });
   }
 
-  removerAcentos(texto: string): string {
+  private removerAcentos(texto: string): string {
     return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   }
 }

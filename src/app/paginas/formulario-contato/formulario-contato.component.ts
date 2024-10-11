@@ -22,11 +22,11 @@ export class FormularioContatoComponent {
   constructor() {
     this.contatoFor = new FormGroup({
       nome: new FormControl('Paiva'),
-      telefone: new FormControl(''),
-      email: new FormControl(''),
+      telefone: new FormControl('99 9999-9999'),
+      email: new FormControl('paiva@email.com.br'),
       aniversario: new FormControl(''),
       redes: new FormControl(''),
-      observacoes: new FormControl(''),
+      observacoes: new FormControl('Olá mundo'),
     });
   }
 }

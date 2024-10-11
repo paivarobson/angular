@@ -6,7 +6,7 @@ Uma aplicação para manipulação de contatos de uma agenda.
 
 ## 🔨 Funcionalidades do projeto
 
-O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo.
+O App lista os contatos, exibindo nome e telefone, de acordo com a letra inicial e possui um filtro interativo. 
 Neste curso, será desenvolvida a tela de formulário, para adição de novos contatos à lista.
 
 ## ✔️ Técnicas e tecnologias utilizadas

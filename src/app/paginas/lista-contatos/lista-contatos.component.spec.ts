@@ -8,10 +8,9 @@ describe('ListaContatosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ListaContatosComponent]
-    })
-    .compileComponents();
-    
+      imports: [ListaContatosComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ListaContatosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

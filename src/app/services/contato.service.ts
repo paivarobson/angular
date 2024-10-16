@@ -16,7 +16,7 @@ export class ContatoService {
       ? JSON.parse(contatosLocalStorageString)
       : null;
 
-    this.contatos = contatosLocalStorage || null;
+    this.contatos = contatosLocalStorage || this.contatos;
 
     //Salvar os contatos no localStorage
     localStorage.setItem('contatos', JSON.stringify(this.contatos));

@@ -16,6 +16,17 @@
   </header>
   <app-separador></app-separador>
   <form [formGroup]="contatoForm" (ngSubmit)="salvarContato()">
+    <div role="button" class="imagem-contato">
+      <i class="material-icons">add</i>
+      <label for="avatar">Adicione a imagem de contato</label>
+      <input
+        type="file"
+        accept="image/*"
+        id="avatar"
+        required
+        (change)="aoSelecionarArquivo($event)"
+      />
+    </div>
     <label for="nome">Nome</label>
     <input
       type="text"
